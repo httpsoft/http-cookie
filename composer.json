@@ -1,0 +1,47 @@
+{
+    "name": "httpsoft/http-cookie",
+    "description": "Cookie management for PHP",
+    "keywords": ["php", "http", "cookie", "cookies", "cookie-manager", "cookie-collection"],
+    "homepage": "https://httpsoft.org/",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Evgeniy Zyubin",
+            "email": "mail@devanych.ru",
+            "homepage": "https://devanych.ru/",
+            "role": "Founder and lead developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/httpsoft/http-cookie/issues",
+        "source": "https://github.com/httpsoft/http-cookie",
+        "docs": "https://httpsoft.org/docs/cookie"
+    },
+    "require": {
+        "php": "^7.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.1",
+        "squizlabs/php_codesniffer": "^3.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "HttpSoft\\Cookie\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "HttpSoft\\Tests\\Cookie\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit --colors=always",
+        "cs-check": "phpcs",
+        "cs-fix": "phpcbf",
+        "check": [
+            "@cs-check",
+            "@test"
+        ]
+    }
+}
