@@ -186,6 +186,14 @@ interface CookieInterface
     public function withSameSite(?string $sameSite): CookieInterface;
 
     /**
+     * Whether this cookie is a session cookie.
+     *
+     * @return bool
+     * @see withExpires()
+     */
+    public function isSession(): bool;
+
+    /**
      * Returns the cookie as a string representation.
      *
      * @return string
