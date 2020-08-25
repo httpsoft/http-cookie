@@ -28,21 +28,6 @@ use function ucfirst;
 final class Cookie implements CookieInterface
 {
     /**
-     * SameSite policy `None`.
-     */
-    public const SAME_SITE_NONE = 'None';
-
-    /**
-     * SameSite policy `Lax`.
-     */
-    public const SAME_SITE_LAX = 'Lax';
-
-    /**
-     * SameSite policy `Strict`.
-     */
-    public const SAME_SITE_STRICT = 'Strict';
-
-    /**
      * @var string
      */
     private string $name;

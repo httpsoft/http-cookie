@@ -20,6 +20,21 @@ use DateTimeInterface;
 interface CookieInterface
 {
     /**
+     * SameSite policy `None`.
+     */
+    public const SAME_SITE_NONE = 'None';
+
+    /**
+     * SameSite policy `Lax`.
+     */
+    public const SAME_SITE_LAX = 'Lax';
+
+    /**
+     * SameSite policy `Strict`.
+     */
+    public const SAME_SITE_STRICT = 'Strict';
+
+    /**
      * Gets the name of the cookie.
      *
      * @return string
