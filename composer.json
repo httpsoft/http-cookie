@@ -1,7 +1,7 @@
 {
     "name": "httpsoft/http-cookie",
-    "description": "Cookie management for PHP",
-    "keywords": ["php", "http", "cookie", "cookies", "cookie-manager", "psr-7", "psr-15"],
+    "description": "Managing cookies with PSR-7 support",
+    "keywords": ["php", "http", "cookie", "cookies", "http-cookie", "psr-7", "psr-15"],
     "homepage": "https://httpsoft.org/",
     "type": "library",
     "license": "MIT",
@@ -25,6 +25,7 @@
         "psr/http-server-middleware": "^1.0"
     },
     "require-dev": {
+        "httpsoft/http-message": "^1.0",
         "phpunit/phpunit": "^9.3",
         "squizlabs/php_codesniffer": "^3.5"
     },
