@@ -134,7 +134,7 @@ final class Cookie implements CookieInterface
     public function getMaxAge(): int
     {
         $maxAge = $this->expires - time();
-        return $maxAge > 0 ? (int) $maxAge : 0;
+        return $maxAge > 0 ? $maxAge : 0;
     }
 
     /**
@@ -441,7 +441,7 @@ final class Cookie implements CookieInterface
      */
     private function setSameSite(?string $sameSite): void
     {
-        $sameSite = empty($sameSite) ? null : ucfirst(strtolower((string) $sameSite));
+        $sameSite = empty($sameSite) ? null : ucfirst(strtolower($sameSite));
         $sameSiteValues = [self::SAME_SITE_NONE, self::SAME_SITE_LAX, self::SAME_SITE_STRICT];
 
         if ($sameSite !== null && !in_array($sameSite, $sameSiteValues, true)) {
