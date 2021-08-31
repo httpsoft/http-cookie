@@ -117,7 +117,7 @@ final class Cookie implements CookieInterface
     /**
      * {@inheritDoc}
      */
-    public function withValue(string $value): self
+    public function withValue(string $value): CookieInterface
     {
         if ($value === $this->value) {
             return $this;
@@ -156,7 +156,7 @@ final class Cookie implements CookieInterface
     /**
      * {@inheritDoc}
      */
-    public function expire(): self
+    public function expire(): CookieInterface
     {
         if ($this->isExpired()) {
             return $this;
@@ -172,7 +172,7 @@ final class Cookie implements CookieInterface
      *
      * @throws InvalidArgumentException if the expire time is not valid.
      */
-    public function withExpires($expire = null): self
+    public function withExpires($expire = null): CookieInterface
     {
         if ($expire === $this->expires) {
             return $this;
@@ -194,7 +194,7 @@ final class Cookie implements CookieInterface
     /**
      * {@inheritDoc}
      */
-    public function withDomain(?string $domain): self
+    public function withDomain(?string $domain): CookieInterface
     {
         if ($domain === $this->domain) {
             return $this;
@@ -216,7 +216,7 @@ final class Cookie implements CookieInterface
     /**
      * {@inheritDoc}
      */
-    public function withPath(?string $path): self
+    public function withPath(?string $path): CookieInterface
     {
         if ($path === $this->path) {
             return $this;
@@ -238,7 +238,7 @@ final class Cookie implements CookieInterface
     /**
      * {@inheritDoc}
      */
-    public function withSecure(bool $secure = true): self
+    public function withSecure(bool $secure = true): CookieInterface
     {
         if ($secure === $this->secure) {
             return $this;
@@ -260,7 +260,7 @@ final class Cookie implements CookieInterface
     /**
      * {@inheritDoc}
      */
-    public function withHttpOnly(bool $httpOnly = true): self
+    public function withHttpOnly(bool $httpOnly = true): CookieInterface
     {
         if ($httpOnly === $this->httpOnly) {
             return $this;
@@ -284,7 +284,7 @@ final class Cookie implements CookieInterface
      *
      * @throws InvalidArgumentException if the sameSite is not valid.
      */
-    public function withSameSite(?string $sameSite): self
+    public function withSameSite(?string $sameSite): CookieInterface
     {
         if ($sameSite === $this->sameSite) {
             return $this;
