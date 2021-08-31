@@ -1,5 +1,28 @@
 # HTTP Cookie Change Log
 
+## 1.0.3 - 2021.09.01
+
+### Added
+
+- Nothing.
+
+### Changed
+
+- Updates development dependencies.
+- Updates GitHub actions.
+
+### Deprecated
+
+- Nothing.
+
+### Removed
+
+- Nothing.
+
+### Fixed
+
+- Replaces the returned `self` type to `HttpSoft\Cookie\CookieInterface` for immutable setters of `HttpSoft\Cookie\Cookie`.
+
 ## 1.0.2 - 2020.12.12
 
 ### Added
