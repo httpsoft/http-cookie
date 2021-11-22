@@ -40,6 +40,7 @@ final class CookieManager implements CookieManagerInterface
      * {@inheritDoc}
      *
      * @psalm-suppress DocblockTypeContradiction
+     * @psalm-suppress RedundantConditionGivenDocblockType
      */
     public function setMultiple(array $cookies): void
     {
