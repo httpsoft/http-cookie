@@ -42,7 +42,7 @@ final class CookieCreator
         ?string $path = '/',
         ?bool $secure = true,
         ?bool $httpOnly = true,
-        ?string $sameSite = Cookie::SAME_SITE_LAX
+        ?string $sameSite = CookieInterface::SAME_SITE_LAX
     ): CookieInterface {
         return new Cookie($name, $value, $expire, $domain, $path, $secure, $httpOnly, $sameSite);
     }

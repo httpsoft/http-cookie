@@ -8,6 +8,9 @@ use Countable;
 use IteratorAggregate;
 use Psr\Http\Message\ResponseInterface;
 
+/**
+ * @psalm-suppress MissingTemplateParam
+ */
 interface CookieManagerInterface extends Countable, IteratorAggregate
 {
     /**
