@@ -448,7 +448,7 @@ final class Cookie implements CookieInterface
             throw new InvalidArgumentException(sprintf(
                 'The sameSite attribute `%s` is not valid; must be one of (%s).',
                 $sameSite,
-                implode(', ', array_map(fn($item) => "\"{$item}\"", $sameSiteValues))
+                implode(', ', array_map(static fn($item) => "\"$item\"", $sameSiteValues)),
             ));
         }
 
