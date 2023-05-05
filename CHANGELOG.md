@@ -1,5 +1,11 @@
 # HTTP Cookie Change Log
 
+## 1.1.0 - 2023.05.05
+
+### Changed
+
+- [#2](https://github.com/httpsoft/http-cookie/pull/2) Allows `psr/http-message` package version 2.
+
 ## 1.0.3 - 2021.09.01
 
 ### Added
