@@ -370,6 +370,7 @@ final class Cookie implements CookieInterface
     /**
      * @param mixed $expire
      * @throws InvalidArgumentException if the expire time is not valid.
+     * @psalm-suppress RiskyTruthyFalsyComparison
      */
     private function setExpires($expire): void
     {
@@ -405,6 +406,7 @@ final class Cookie implements CookieInterface
 
     /**
      * @param string|null $domain
+     * @psalm-suppress RiskyTruthyFalsyComparison
      */
     private function setDomain(?string $domain): void
     {
@@ -413,6 +415,7 @@ final class Cookie implements CookieInterface
 
     /**
      * @param string|null $path
+     * @psalm-suppress RiskyTruthyFalsyComparison
      */
     private function setPath(?string $path): void
     {
@@ -438,6 +441,7 @@ final class Cookie implements CookieInterface
     /**
      * @param string|null $sameSite
      * @throws InvalidArgumentException if the sameSite is not valid.
+     * @psalm-suppress RiskyTruthyFalsyComparison
      */
     private function setSameSite(?string $sameSite): void
     {
