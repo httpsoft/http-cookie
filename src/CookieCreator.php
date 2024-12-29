@@ -33,7 +33,6 @@ final class CookieCreator
      * @param string|null $sameSite whether the cookie will be available for cross-site requests.
      * @return CookieInterface
      * @throws InvalidArgumentException if one or more arguments are not valid.
-     * @psalm-suppress RiskyTruthyFalsyComparison
      */
     public static function create(
         string $name,
@@ -54,6 +53,7 @@ final class CookieCreator
      * @param string $string raw `Set-Cookie` header value.
      * @return CookieInterface
      * @throws InvalidArgumentException if the raw `Set-Cookie` header value is not valid.
+     * @psalm-suppress RiskyTruthyFalsyComparison
      */
     public static function createFromString(string $string): CookieInterface
     {
